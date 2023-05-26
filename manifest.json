@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Ajuste de Volumen de Pestañas",
+    "version": "1.0",
+    "description": "Permite ajustar el volumen de las pestañas individualmente.",
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "128": "iconAudio.png"
+        }
+    },
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "scripting",
+        "storage"
+    ],
+    
+    "icons": {
+        "128": "iconAudio.png"
+    }
+}
