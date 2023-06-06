@@ -8,7 +8,7 @@ function adjustVolume(volume) {
       target: { tabId: tabId },
       function: function(tab) {
         // Comprobar si el sitio web tiene un elemento de audio o video
-        const mediaElements = tab.querySelectorAll('audio, video, [type="audio/ogg; codecs=opus"]');
+        const mediaElements = tab.querySelectorAll('audio, video');
         if (mediaElements.length > 0) {
           // Ajustar el volumen de cada elemento de audio o video encontrado
           mediaElements.forEach(function(element) {
