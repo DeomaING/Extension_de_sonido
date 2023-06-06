@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function adjustVolume(volume) {
-  const mediaElements = document.querySelectorAll('audio, video');
+  const mediaElements = document.querySelectorAll('audio, video, [type="audio/ogg; codecs=opus"]');
   if (mediaElements.length > 0) {
     mediaElements.forEach(function(element) {
       element.volume = volume / 100;
